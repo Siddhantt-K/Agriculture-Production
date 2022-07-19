@@ -12,20 +12,20 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-img = Image.open("D:/Softwares/DS/Project/Optimising Agriculture/Final Files/assets/icon.png") 
+img = Image.open("icon.png") 
 
 st.set_page_config(page_title="Optimizing Agriculture Web App", 
                    page_icon= img,
                    layout='centered')
 
-data = pd.read_csv("D:/Softwares/DS/Project/Optimising Agriculture/Final Files/dataset/data.csv")
+data = pd.read_csv("data.csv")
 X = data.iloc[:,0:-1]
 y = data.iloc[:,-1]
 
-model = open("D:/Softwares/DS/Project/Optimising Agriculture/Final Files/Agriculture_XGBoost_Model.pkl", 'rb')
+model = open("Agriculture_XGBoost_Model.pkl", 'rb')
 classifier = pickle.load(model)
 
-home_img = Image.open("D:/Softwares/DS/Project/Optimising Agriculture/Final Files/assets/npk.jpg")
+home_img = Image.open("npk.jpg")
 
 # def open_browser():
 #    webbrowser.open_new("http://127.0.0.1:8501")

@@ -29,7 +29,8 @@ home_img = Image.open("assets/npk.jpg")
 
 # def open_browser():
 #    webbrowser.open_new("http://127.0.0.1:8501")
-                    
+
+@st.cache(suppress_st_warning=True)                    
 def main():
     
     #option = st.sidebar.selectbox('Options',('Home','Know Your Crop'))

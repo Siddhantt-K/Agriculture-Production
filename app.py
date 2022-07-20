@@ -35,9 +35,10 @@ def main():
     #option = st.sidebar.selectbox('Options',('Home','Know Your Crop'))
     #st.header(option)
     
-    option = option_menu(menu_title=None,
-                         options=['Home', 'Data Info', 'Visualization', 'Know Your Crop'],
+    option = option_menu(None,
+                         ['Home', 'Data Info', 'Visualization', 'Know Your Crop'],
                          icons=['house-fill', 'info-circle-fill','bar-chart-line-fill', 'caret-right-fill'],
+                         default_index=0,
                          orientation='horizontal',
                          styles={
                                  'Container':{'padding':'0!important', 'background-color':'#fafafa'},
@@ -101,10 +102,11 @@ def main():
             st.subheader('Histogram')
             st.info("If error, try reloading the app.")
             column_dist_plot = st.selectbox("Choose a feature", data.columns[:-1].tolist())
-            fig = sns.distplot(data[column_dist_plot])
+            fig = sns.histplot(data[column_dist_plot])
             st.pyplot()
                                    
     if option == 'Know Your Crop':
+        st.subheader("Fill Below Entries & Get To Know Your Crop")
         
         Nitrogen = st.number_input('Nitrogen', 0, 140)
         Phosphorous = st.number_input('Phosphourus', 5, 145)

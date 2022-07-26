@@ -48,10 +48,10 @@ def main():
                                              'font-size':'19px',
                                              'text-align':'center',
                                              'margin':'0px',
-                                             '--hover-color': '#eee',
+                                             '--hover-color': '#eee'
                                              },
                                  'nav-link-selected':{'background-color':'green'},
-                                 },                            
+                                 }                            
                         )        
         
     if option == 'Home':

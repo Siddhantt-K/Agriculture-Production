@@ -6,15 +6,15 @@ import pickle
 import pandas as pd
 import numpy as np
 from PIL import Image
-import webbrowser
+#import webbrowser
 import io
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.express as px
+#import plotly.express as px
 
 img = Image.open("assets/icon.png") 
 
-st.set_page_config(page_title="Optimizing Agriculture Web App", 
+st.set_page_config(page_title="Agriculture Production Web App", 
                    page_icon= img,
                    layout='centered')
 
@@ -30,7 +30,7 @@ home_img = Image.open("assets/npk.jpg")
 # def open_browser():
 #    webbrowser.open_new("http://127.0.0.1:8501")
 
-@st.cache(suppress_st_warning=True)                    
+# @st.cache(suppress_st_warning=True)                    
 def main():
     
     #option = st.sidebar.selectbox('Options',('Home','Know Your Crop'))

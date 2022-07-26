@@ -39,10 +39,11 @@ def main():
     option = option_menu(None,
                          ['Home', 'Data Info', 'Visualization', 'Know Your Crop'],
                          icons=['house-fill', 'info-circle-fill','bar-chart-line-fill', 'caret-right-fill'],
+                         menu_icon="cast",
                          default_index=0,
                          orientation='horizontal',
                          styles={
-                                 'Container':{'padding':'0!important', 'background-color':'#fafafa'},
+                                 'container':{'padding':'0!important', 'background-color':'#fafafa'},
                                  'icon':{'color':'black', 'font-size':'18px'},
                                  'nav-link':{
                                              'font-size':'19px',

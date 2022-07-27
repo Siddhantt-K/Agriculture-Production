@@ -12,6 +12,15 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 #import plotly.express as px
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 img = Image.open("assets/icon.png") 
 
 st.set_page_config(page_title="Agriculture Production Web App", 

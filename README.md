@@ -2,8 +2,6 @@
 
 ![pic1](assets/pic1.jpg)
 
-## Click below to view the Web App
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://siddhantt-k-agriculture-production-app-x81l9j.streamlitapp.com/)
 
 ### Demo Images-
 
@@ -19,7 +17,7 @@
 ## Key findings: Crops which require high ratio of both Phosphorous and Potassium in the soil are Grapes and Apple.
 
 
-## Authors
+## Author
 
 - [@Siddhantt-K](https://www.github.com/Siddhantt-K)
 

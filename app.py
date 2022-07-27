@@ -118,23 +118,24 @@ def main():
                                    
     if option == 'Know Your Crop':
         st.subheader("Fill Below Entries & Get To Know Your Crop")
+
+        with st.form(key='my_form'):  
         
-        Nitrogen = st.number_input('Nitrogen', 0, 140)
-        Phosphorous = st.number_input('Phosphourus', 5, 145)
-        Potassium = st.number_input('Potassium', 5, 205)
-        Temperature = st.number_input('Temperature', 8.0, 44.0)
-        Humidity = st.number_input('Humidity', 14.00, 100.00)
-        pH = st.slider('pH', 3.0, 10.0, 4.0)
-        Rainfall = st.number_input('Rainfall',20.0, 300.0 )
+            Nitrogen = st.number_input('Nitrogen', 0, 140, on_change=None)
+            Phosphorous = st.number_input('Phosphourus', 5, 145, on_change=None)
+            Potassium = st.number_input('Potassium', 5, 205, on_change=None)
+            Temperature = st.number_input('Temperature', 8.0, 44.0, on_change=None)
+            Humidity = st.number_input('Humidity', 14.00, 100.00, on_change=None)
+            pH = st.slider('pH', 3.0, 10.0, 4.0, on_change=None)
+            Rainfall = st.number_input('Rainfall',20.0, 300.0, on_change=None)
         
-        features = [Nitrogen, Phosphorous, Potassium, Temperature, Humidity, pH, Rainfall]
-        single_sample = np.array(features).reshape(1,-1)
-        
-        if st.button('Predict'):
-            prediction = classifier.predict(single_sample)[0]
-            st.subheader("The suggested Crop for the given Soil Requirement and Climatic Condition is:")
-            st.success(prediction)
+            features = [Nitrogen, Phosphorous, Potassium, Temperature, Humidity, pH, Rainfall]
+            single_sample = np.array(features).reshape(1,-1)
             
+            if st.form_submit_button('Predict'):
+                prediction = classifier.predict(single_sample)[0]
+                st.subheader("The suggested Crop for the given Soil Requirement and Climatic Condition is:")
+                st.success(prediction)            
 # open_browser()
     
 if __name__ == '__main__':

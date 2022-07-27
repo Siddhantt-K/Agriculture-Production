@@ -44,6 +44,7 @@ def main():
     
     #option = st.sidebar.selectbox('Options',('Home','Know Your Crop'))
     #st.header(option)
+    st.title("Agriculture Production Web App")
     
     option = option_menu(None,
                          ['Home', 'Data Info', 'Visualization', 'Know Your Crop'],
@@ -65,7 +66,7 @@ def main():
                         )        
         
     if option == 'Home':
-        st.title('Helping farmers to achieve good quality and higher production of crops.')
+        st.subheader('Helping farmers to achieve good quality and higher production of crops.')
         st.image(home_img)
         st.markdown('##### If you ate today, thank a Farmer.')
             

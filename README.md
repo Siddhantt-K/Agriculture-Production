@@ -2,6 +2,8 @@
 
 ![pic1](assets/pic1.jpg)
 
+## Click below to view the Web App
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://siddhantt-k-agriculture-production-app-x81l9j.streamlitapp.com/)
 
 ### Demo Images-
 

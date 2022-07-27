@@ -12,6 +12,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 #import plotly.express as px
 
+img = Image.open("assets/icon.png") 
+
+st.set_page_config(page_title="Agriculture Production Web App", 
+                   page_icon= img,
+                   layout='centered')
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -20,12 +26,6 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-
-img = Image.open("assets/icon.png") 
-
-st.set_page_config(page_title="Agriculture Production Web App", 
-                   page_icon= img,
-                   layout='centered')
 
 data = pd.read_csv("dataset/data.csv")
 X = data.iloc[:,0:-1]

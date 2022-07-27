@@ -3,6 +3,10 @@
 ![pic1](assets/pic1.jpg)
 
 
+## Click below to view the Web App
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://siddhantt-k-agriculture-production-app-x81l9j.streamlitapp.com/)
+
+
 ### Demo Images-
 
 ![HomePage](https://user-images.githubusercontent.com/87244972/180976973-fde76cc8-2591-4996-8455-f33dcd662a78.PNG)
@@ -20,6 +24,7 @@
 ## Author
 
 - [@Siddhantt-K](https://www.github.com/Siddhantt-K)
+
 
 ## Table of Contents
 
@@ -72,6 +77,7 @@ To deploy this project on streamlit share, follow these steps:
 - Select the Github repo name, branch, python file with the streamlit codes
 - Click advanced settings, select python version 3.9 and add the secret keys if your model is stored on AWS or GCP bucket
 - Then save and deploy!
+
 
 ## Repository structure
 
